@@ -1,0 +1,741 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indonesia-US ART Detailed Baby Explainer</title>
+  <style>
+    :root {
+      --bg: #f7f4ed;
+      --card: #ffffff;
+      --ink: #1f2a37;
+      --muted: #5d6675;
+      --line: #d7dce4;
+      --accent: #0f766e;
+      --accent-soft: #e8f7f4;
+      --focus: #8b5cf6;
+      --warn: #92400e;
+      --ok: #166534;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Source Sans 3", "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      line-height: 1.35;
+      background:
+        radial-gradient(1100px 420px at -10% -10%, #fbead9, transparent 60%),
+        radial-gradient(1200px 460px at 100% 0%, #dff3ee, transparent 60%),
+        var(--bg);
+    }
+    .wrap {
+      width: min(1100px, 96vw);
+      margin: 14px auto 24px;
+      display: grid;
+      gap: 12px;
+    }
+    .panel {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px;
+      box-shadow: 0 3px 16px rgba(12, 23, 42, 0.05);
+    }
+    h1, h2, h3 { margin: 0; }
+    h1 {
+      font-family: "Merriweather", Georgia, serif;
+      font-size: 30px;
+      line-height: 1.15;
+    }
+    h2 {
+      font-family: "Merriweather", Georgia, serif;
+      font-size: 20px;
+      margin-bottom: 6px;
+    }
+    h3 {
+      font-size: 13px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin-bottom: 5px;
+    }
+    p { margin: 0; }
+    .sub {
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 8px;
+    }
+    .chip {
+      border-radius: 999px;
+      border: 1px solid #b8d7d1;
+      background: var(--accent-soft);
+      color: #0f4e47;
+      padding: 4px 8px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    button {
+      border: 1px solid #b8c0cc;
+      background: #fff;
+      color: #243042;
+      border-radius: 8px;
+      padding: 7px 10px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    button:hover { border-color: #97a4b5; }
+    .btn-focus {
+      border-color: #d3c2fb;
+      background: #f8f4ff;
+      color: #5b2dbb;
+    }
+    .legend {
+      margin-top: 8px;
+      font-size: 12px;
+      color: #49566a;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .article {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      overflow: hidden;
+      background: #fff;
+      margin-bottom: 8px;
+    }
+    .article[hidden] { display: none !important; }
+    summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 10px 11px;
+      background: #f8fafc;
+      border-bottom: 1px solid var(--line);
+      font-weight: 700;
+      font-size: 14px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    .article-body {
+      padding: 10px 11px 11px;
+      font-size: 13px;
+    }
+    ul { margin: 6px 0 0 18px; padding: 0; }
+    li { margin: 3px 0; }
+    .baby {
+      margin-top: 6px;
+      background: #fff8e7;
+      border: 1px solid #f2ddad;
+      border-radius: 8px;
+      padding: 8px;
+      font-size: 13px;
+    }
+    .impact {
+      margin-top: 6px;
+      color: #334155;
+      font-size: 13px;
+    }
+    .focus-box {
+      border: 1px solid #cfe7e3;
+      background: #f1fbf8;
+      border-radius: 10px;
+      padding: 10px;
+      margin-top: 8px;
+    }
+    .warn {
+      color: var(--warn);
+      font-weight: 700;
+    }
+    .ok {
+      color: var(--ok);
+      font-weight: 700;
+    }
+    .source {
+      font-size: 11px;
+      color: #5c6778;
+      border-top: 1px dashed #cfd5de;
+      margin-top: 9px;
+      padding-top: 8px;
+    }
+
+    @media (max-width: 900px) {
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+
+    @media print {
+      @page { size: Letter; margin: 0.45in; }
+      body { background: #fff; }
+      .wrap { width: 100%; margin: 0; }
+      .panel {
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 0;
+      }
+      .controls { display: none; }
+      details.article { break-inside: avoid; page-break-inside: avoid; }
+      .panel + .panel { margin-top: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="panel">
+      <h1>Indonesia-US ART in Baby Language (Detailed)</h1>
+      <p class="sub">Plain-English explainer of the signed agreement (date in document: February 19, 2026). This is not legal advice. It is a learning tool.</p>
+      <div class="chips">
+        <span class="chip">Covers each main article (1.1 to 7.5)</span>
+        <span class="chip">Extra-deep on Security (Section 5)</span>
+        <span class="chip">Extra-deep on Commercial (Section 6)</span>
+        <span class="chip">Extra-deep on Non-tariff rules (Art 1.2 & 2.1 + Annex III 2.10)</span>
+      </div>
+
+      <div class="controls">
+        <button id="expandAll">Expand all</button>
+        <button id="collapseAll">Collapse all</button>
+        <button class="btn-focus" data-filter="all">Show all</button>
+        <button class="btn-focus" data-filter="non-tariff">Only non-tariff</button>
+        <button class="btn-focus" data-filter="security">Only security</button>
+        <button class="btn-focus" data-filter="commercial">Only commercial</button>
+      </div>
+      <p class="legend">Tip: Open only the sections you care about, then print/export PDF.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Section 1: Tariffs and Quotas</h2>
+
+      <details class="article" data-tags="non-tariff tariffs" open>
+        <summary>Article 1.1 Tariffs</summary>
+        <div class="article-body">
+          <ul>
+            <li><b>1.1(1):</b> Indonesia must apply import duty for US-origin goods based on Schedule 1.</li>
+            <li><b>1.1(2):</b> US must apply revised reciprocal tariff rate for Indonesia-origin goods based on Schedule 2.</li>
+          </ul>
+          <div class="baby"><b>Baby meaning:</b> This is the main “price list at the border.” Both sides agree to use the tariff schedules like a menu.</div>
+          <div class="impact">Why it matters for US tariff relief: Indonesia gets better US tariff treatment only through the schedule lanes and only while the agreement is alive.</div>
+        </div>
+      </details>
+
+      <details class="article" data-tags="non-tariff" open>
+        <summary>Article 1.2 Quantitative Restrictions (extra focus)</summary>
+        <div class="article-body">
+          <ul>
+            <li>Indonesia cannot block US imports using quota-style tools (including import licenses used like quotas, commodity-balance style controls), except where WTO GATT allows.</li>
+          </ul>
+          <div class="baby"><b>Baby meaning:</b> Indonesia cannot say: “You can only bring in 100 boxes this month” unless WTO rules clearly allow it.</div>
+          <div class="impact"><b>Practical effect:</b> US negotiators want market access to be real, not blocked by hidden quantity caps.</div>
+        </div>
+      </details>
+    </section>
+
+    <section class="panel">
+      <h2>Section 2: Non-Tariff Barriers and Related Matters (main text)</h2>
+      <div class="grid-2">
+        <div>
+          <details class="article" data-tags="non-tariff" open>
+            <summary>Article 2.1 Import Licensing (extra focus)</summary>
+            <div class="article-body">
+              <ul>
+                <li>Indonesia cannot use import licensing in a way that restricts US imports.</li>
+                <li>If licensing is non-automatic, it must be transparent, non-discriminatory, not too burdensome, and not reduce competitiveness of US exports.</li>
+              </ul>
+              <div class="baby"><b>Baby meaning:</b> License system cannot be a “slow-motion ban.” It can exist, but it cannot become a trap.</div>
+            </div>
+          </details>
+
+          <details class="article" data-tags="non-tariff">
+            <summary>Article 2.2 Technical Rules / Standards / Testing</summary>
+            <div class="article-body">
+              <ul>
+                <li>Indonesia should allow US goods that meet US/international standards without extra unnecessary testing.</li>
+                <li>No disguised technical barriers or duplicative conformity checks.</li>
+              </ul>
+              <div class="baby"><b>Baby meaning:</b> Do not make people pass the same exam two or three times just to keep them out.</div>
+            </div>
+          </details>
+
+          <details class="article" data-tags="non-tariff">
+            <summary>Article 2.3 Agriculture (SPS)</summary>
+            <div class="article-body">
+              <ul>
+                <li>SPS measures should be science/risk based.</li>
+                <li>No fake health rules used as hidden trade walls.</li>
+              </ul>
+              <div class="baby"><b>Baby meaning:</b> Safety rules must be real science, not an excuse to block US farm goods.</div>
+            </div>
+          </details>
+
+          <details class="article" data-tags="non-tariff">
+            <summary>Article 2.4 Geographical Indications</summary>
+            <div class="article-body">
+              <ul>
+                <li>GI recognition must be transparent/fair.</li>
+                <li>If a term is generic and not truly tied to geography, Indonesia should allow US use of that term.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="article" data-tags="non-tariff">
+            <summary>Article 2.5 Cheese and Meat Terms</summary>
+            <div class="article-body">
+              <ul>
+                <li>Indonesia cannot block US market access just because US uses listed cheese/meat names.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="article" data-tags="non-tariff">
+            <summary>Article 2.6 Intellectual Property</summary>
+            <div class="article-body">
+              <ul>
+                <li>Stronger IP protection and enforcement (civil, criminal, border, including online).</li>
+                <li>Ratify/implement treaty commitments listed in Annex III.</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+
+        <div>
+          <details class="article" data-tags="non-tariff">
+            <summary>Article 2.7 Services</summary>
+            <div class="article-body">
+              <ul>
+                <li>Address current services barriers hurting reciprocity.</li>
+                <li>Do not add new barriers treating US suppliers worse than local/third-country suppliers.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="article" data-tags="non-tariff">
+            <summary>Article 2.8 Good Regulatory Practices</summary>
+            <div class="article-body">
+              <ul><li>Rules should be transparent, predictable, and open to participation.</li></ul>
+            </div>
+          </details>
+
+          <details class="article" data-tags="non-tariff">
+            <summary>Article 2.9 Labor</summary>
+            <div class="article-body">
+              <ul>
+                <li>Ban import of forced-labor goods (implementation timeline in text).</li>
+                <li>Protect labor rights and enforce labor laws; do not weaken labor rules to attract trade/investment.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="article" data-tags="non-tariff">
+            <summary>Article 2.10 Environment</summary>
+            <div class="article-body">
+              <ul><li>Adopt and enforce environmental protections and governance.</li></ul>
+            </div>
+          </details>
+
+          <details class="article" data-tags="non-tariff">
+            <summary>Article 2.11 Customs and Trade Facilitation</summary>
+            <div class="article-body">
+              <ul><li>Use tech for pre-arrival processing, paperless trade, and digital border processes.</li></ul>
+            </div>
+          </details>
+
+          <details class="article" data-tags="non-tariff">
+            <summary>Article 2.12 Border Measures and Taxes</summary>
+            <div class="article-body">
+              <ul>
+                <li>Indonesia should coordinate/align with future US border measures against regulatory arbitrage.</li>
+                <li>No discriminatory VAT against US companies.</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Section 3 and 4: Digital Trade + Rules of Origin</h2>
+      <div class="grid-2">
+        <details class="article" data-tags="non-tariff" open>
+          <summary>Articles 3.1 to 3.5 (digital trade package)</summary>
+          <div class="article-body">
+            <ul>
+              <li><b>3.1:</b> No discriminatory digital services tax on US firms.</li>
+              <li><b>3.2:</b> Keep digital trade open (no discrimination, trusted cross-border data, cyber cooperation).</li>
+              <li><b>3.3:</b> Consult US before digital deals with others that could harm essential US interests.</li>
+              <li><b>3.4:</b> No forced transfer of source code/technology as market-entry condition (except specific regulatory/judicial need with safeguards).</li>
+              <li><b>3.5:</b> No customs duties on electronic transmissions; support WTO moratorium.</li>
+            </ul>
+            <div class="baby"><b>Baby meaning:</b> “Don’t tax or trap US digital business in unfair ways, and don’t force US tech secrets to be handed over.”</div>
+          </div>
+        </details>
+
+        <details class="article" data-tags="non-tariff">
+          <summary>Article 4.1 Rules of Origin (important backstop)</summary>
+          <div class="article-body">
+            <ul>
+              <li>The deal is meant to benefit US and Indonesia mainly, not third countries.</li>
+              <li>If benefits leak to third-country actors too much, parties can set rules-of-origin safeguards.</li>
+            </ul>
+            <div class="baby"><b>Baby meaning:</b> No “sneaking through the back door” by third countries.</div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Section 5 Security (main text) — EXTRA DETAIL</h2>
+
+      <details class="article" data-tags="security" open>
+        <summary>Article 5.1 Complementary Actions</summary>
+        <div class="article-body">
+          <ul>
+            <li><b>5.1(1):</b> If US places restrictive measures on a third country for economic/national security and notifies Indonesia, Indonesia should adopt measures with equivalent restrictive effect to address shared concerns.</li>
+            <li><b>5.1(2):</b> At US request, Indonesia should act against unfair practices by third-country-controlled firms operating in Indonesia when those practices hurt US trade (below-market exports, export surges, or reduced US exports).</li>
+            <li><b>5.1(3):</b> Indonesia should adopt similar restrictive-effect measures as US shipping/shipbuilding policies and discuss structure/effects.</li>
+          </ul>
+          <div class="baby"><b>Baby meaning:</b> US says, “If we lock one door for security reasons, we want Indonesia to lock a matching door too.”</div>
+          <div class="impact"><span class="warn">Tariff relevance:</span> This turns tariff benefits into a broader alignment package, not only trade paperwork.</div>
+        </div>
+      </details>
+
+      <details class="article" data-tags="security" open>
+        <summary>Article 5.2 Export Controls, Sanctions, Investment Security</summary>
+        <div class="article-body">
+          <ul>
+            <li><b>5.2(1):</b> Indonesia cooperates to restrict transactions with BIS Entity List and OFAC-listed persons/entities (under domestic law framework).</li>
+            <li><b>5.2(2):</b> Indonesia builds a national security review mechanism for inbound investment and cooperates with US on investment security.</li>
+            <li><b>5.2(3):</b> If US sees Indonesia as cooperative, US may consider that in export controls/investment review administration.</li>
+            <li><b>5.2(4):</b> Indonesia should align with US controls on sensitive technologies and prevent “backfilling” that undermines US controls.</li>
+          </ul>
+          <div class="baby"><b>Baby meaning:</b> This is “security teamwork mode”: list-screening, investment checks, and tech-control alignment.</div>
+          <div class="impact"><span class="ok">Positive path:</span> Better trust can help keep preferential treatment stable. <span class="warn">Risk path:</span> weak alignment increases enforcement friction.</div>
+        </div>
+      </details>
+
+      <details class="article" data-tags="security" open>
+        <summary>Article 5.3 Other Measures (termination trigger lives here)</summary>
+        <div class="article-body">
+          <ul>
+            <li><b>5.3(1):</b> US works with Indonesia to streamline defense trade.</li>
+            <li><b>5.3(2):</b> Indonesia must enforce anti-transshipment/anti-circumvention and enter duty-evasion cooperation arrangement with US.</li>
+            <li><b>5.3(3):</b> If Indonesia signs a new FTA/preferential agreement with a country that jeopardizes essential US interests, US may terminate this ART (after consultations fail) and reimpose EO 14257 reciprocal tariff treatment.</li>
+          </ul>
+          <div class="baby"><b>Baby meaning:</b> There is a “big red button.” If strategic trust breaks, US can end this deal quickly and bring back harder tariff treatment.</div>
+        </div>
+      </details>
+    </section>
+
+    <section class="panel">
+      <h2>Section 6 Commercial Considerations (main text) — EXTRA DETAIL</h2>
+
+      <details class="article" data-tags="commercial" open>
+        <summary>Article 6.1 Investment</summary>
+        <div class="article-body">
+          <ul>
+            <li><b>6.1(1):</b> Indonesia facilitates US investment in critical minerals/energy/infrastructure and gives treatment no less favorable than local investors in like circumstances.</li>
+            <li><b>6.1(2):</b> US agencies (EXIM/DFC, if eligible) may consider financing support in critical sectors.</li>
+            <li><b>6.1(3):</b> Indonesia facilitates job-creating greenfield investment in US.</li>
+          </ul>
+          <div class="baby"><b>Baby meaning:</b> “Let US money and projects in, and we will help finance good projects too.”</div>
+        </div>
+      </details>
+
+      <details class="article" data-tags="commercial" open>
+        <summary>Article 6.2 Commercial Considerations (SOEs and subsidies)</summary>
+        <div class="article-body">
+          <ul>
+            <li>Indonesia SOEs should buy/sell using commercial logic, not political favoritism.</li>
+            <li>No discrimination against US goods/services, and limited subsidy-style support except public-service mandate.</li>
+            <li>On US written request, Indonesia provides subsidy/non-commercial assistance info and takes action on distortive impacts.</li>
+          </ul>
+          <div class="baby"><b>Baby meaning:</b> State-owned firms should play fair market game, not “special home-team rules.”</div>
+        </div>
+      </details>
+
+      <details class="article" data-tags="commercial" open>
+        <summary>Article 6.3 Textiles</summary>
+        <div class="article-body">
+          <ul>
+            <li>US commits to a mechanism so certain Indonesian textile/apparel goods can get zero reciprocal tariff rate.</li>
+            <li>The volume is linked to Indonesian use of US textile inputs (for example US cotton/man-made fibers).</li>
+          </ul>
+          <div class="baby"><b>Baby meaning:</b> “You buy more US textile inputs, you may get more zero-tariff textile lane.”</div>
+        </div>
+      </details>
+
+      <details class="article" data-tags="commercial" open>
+        <summary>Article 6.4 Purchases</summary>
+        <div class="article-body">
+          <ul>
+            <li>Indonesia facilitates purchases by Indonesian firms of US-origin goods listed in Annex IV.</li>
+          </ul>
+          <div class="baby"><b>Baby meaning:</b> The deal includes a shopping list, not only legal rules.</div>
+        </div>
+      </details>
+    </section>
+
+    <section class="panel">
+      <h2>Section 7: Implementation, Enforcement, and Exit</h2>
+      <div class="grid-2">
+        <details class="article" data-tags="enforcement" open>
+          <summary>Articles 7.1 and 7.2 (legal plumbing)</summary>
+          <div class="article-body">
+            <ul>
+              <li><b>7.1:</b> Annexes/appendices/footnotes are legally part of the deal.</li>
+              <li><b>7.2:</b> Changes need written agreement and legal procedures.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="article" data-tags="enforcement" open>
+          <summary>Article 7.3 (enforcement) + 7.4 (termination) + 7.5 (entry)</summary>
+          <div class="article-body">
+            <ul>
+              <li><b>7.3(1):</b> Nothing blocks a party from extra tariffs/actions for unfair trade, import surges, or security reasons under domestic law.</li>
+              <li><b>7.3(2):</b> If one side sees non-compliance, it can review terms and act under domestic law (consult first where practicable).</li>
+              <li><b>7.3(3):</b> Import surge/trade-deficit concerns can trigger consultations.</li>
+              <li><b>7.4:</b> Either side can terminate with written notice; effective 30 days later.</li>
+              <li><b>7.5:</b> Entry into force after legal notifications (90 days unless otherwise agreed).</li>
+            </ul>
+            <div class="baby"><b>Baby meaning:</b> This deal has real brakes, not just promises. If trust or compliance breaks, penalties/exit can happen fast.</div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Requested Deep Dive: Non-tariff + Security + Commercial from Annex III</h2>
+
+      <div class="focus-box">
+        <h3>Non-tariff (import licensing / quantity control in agriculture)</h3>
+        <ul>
+          <li><b>Annex III Art 2.10(1):</b> US-origin food/ag products are exempted from Indonesia commodity-balance policy and major import-licensing regimes; Indonesia should apply only automatic licensing for these products.</li>
+          <li><b>Annex III Art 2.10(2)(a)-(b):</b> No special/exclusive importer rights that limit US ag products; no other importer restrictions for US ag products.</li>
+        </ul>
+        <div class="baby"><b>Baby meaning:</b> No hidden gatekeeper and no quota-by-paperwork for US farm products.</div>
+      </div>
+
+      <div class="focus-box">
+        <h3>Security (Annex III Section 5)</h3>
+        <ul>
+          <li><b>5.1:</b> Indonesia joins Global Forum on Steel Excess Capacity and acts on steel overcapacity impact.</li>
+          <li><b>5.2:</b> Secure ICT suppliers and secure logistics platforms/ports against cyber and national-security data risk.</li>
+          <li><b>5.3:</b> Build robust export-control regime; restrict unauthorized reexport/transfer of US-controlled items; share data and enforce.</li>
+          <li><b>5.4:</b> More AD/CVD cooperation, including circumvention inquiries.</li>
+          <li><b>5.5:</b> Steps to ratify Convention on Supplementary Compensation for Nuclear Damage.</li>
+        </ul>
+      </div>
+
+      <div class="focus-box">
+        <h3>Commercial (Annex III Section 6 + Annex IV)</h3>
+        <ul>
+          <li><b>6.1 Critical minerals:</b> remove export restrictions to US on industrial commodities/critical minerals; develop rare-earth/critical-mineral cooperation with US firms.</li>
+          <li><b>6.2 Strategic investment:</b> endeavor to facilitate outbound direct investment to US with minimum indicative value of USD 10 billion.</li>
+          <li><b>6.4 Energy purchases:</b> facilitate approvals for increased US energy purchases (crude, refined, LPG) including long-term contracts.</li>
+          <li><b>Annex IV:</b> support/facilitate US goods/services imports with indicative total up to USD 33 billion.</li>
+        </ul>
+        <div class="baby"><b>Baby meaning:</b> This is not only “rules.” It is also “money and buying commitments.”</div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>NEW: Annex-by-Annex + Appendix Baby Explainer</h2>
+
+      <div class="focus-box">
+        <h3>What is in scope</h3>
+        <ul>
+          <li><b>Annex I:</b> Tariff schedules + <b>Appendix 1</b> (TRQs).</li>
+          <li><b>Annex II:</b> Protected market-access naming list (cheese/meat terms).</li>
+          <li><b>Annex III:</b> Detailed implementation checklist (many article-level obligations).</li>
+          <li><b>Annex IV:</b> Purchase commitments and indicative import targets/values.</li>
+        </ul>
+        <div class="baby"><b>Baby meaning:</b> Main text tells the rules. Annexes tell the detailed homework.</div>
+      </div>
+
+      <details class="article" data-tags="non-tariff commercial" open>
+        <summary>Annex I + Appendix 1 (Tariff menus + TRQ mechanics)</summary>
+        <div class="article-body">
+          <h3>Annex I - Schedule 1 (Indonesia tariff schedule for US-origin goods)</h3>
+          <ul>
+            <li>Uses ICTB 2022 structure and meanings.</li>
+            <li>Staging categories: <b>EIF</b> (duty goes to zero at entry into force), <b>A</b> (stays zero), <b>TRQ</b> (quota-based lane), <b>Z</b> (normal applied MFN lane).</li>
+            <li>TRQ administration rules: transparent, fair, first-come-first-served, non-discriminatory, and published in advance.</li>
+          </ul>
+          <div class="baby"><b>Baby meaning:</b> Schedule 1 is Indonesia's tariff price list for US goods, with special quota lanes for selected products.</div>
+
+          <h3>Annex I - Appendix 1 (TRQ details)</h3>
+          <ul>
+            <li><b>Pork products:</b> 3,000 MT duty-free in-quota each year; above quota goes to category Z treatment.</li>
+            <li><b>Distilled spirits:</b> 400 MT in-quota at 5% duty each year; above quota goes to category Z treatment.</li>
+            <li><b>Wine and related products:</b> 1,985 MT in-quota at 5% duty each year; above quota goes to category Z treatment.</li>
+          </ul>
+          <div class="baby"><b>Baby meaning:</b> Appendix 1 gives exact quota numbers. Inside quota = friendlier duty. Outside quota = tougher normal lane.</div>
+
+          <h3>Annex I - Schedule 2 (US tariff schedule for Indonesia-origin goods)</h3>
+          <ul>
+            <li>Goods in <b>Schedule 2A</b>: no additional reciprocal tariff under EO 14257.</li>
+            <li>Goods in <b>Schedule 2B</b>: reciprocal tariff rate is <b>0</b> (EO 14360 lane).</li>
+            <li>All other Indonesian-origin goods: additional reciprocal tariff is <b>no higher than 19%</b>, and this is on top of normal US MFN duty.</li>
+          </ul>
+          <div class="baby"><b>Baby meaning:</b> US side has three baskets: protected basket, zero basket, and <=19% basket.</div>
+          <div class="impact"><b>Implementation note:</b> full line-by-line tariff tables are in the companion schedules file (`02.19.26 US-IDN ART Schedules 1 and 2 - As Printed and for Website sanitized.pdf`).</div>
+        </div>
+      </details>
+
+      <details class="article" data-tags="non-tariff" open>
+        <summary>Annex II (Market Access List for names/terms)</summary>
+        <div class="article-body">
+          <ul>
+            <li>Contains a list of 40 cheese terms (for example cheddar, mozzarella, parmesan, swiss) and 10 meat terms (for example bratwurst, prosciutto, salami).</li>
+            <li>Connects to main text Article 2.5 so Indonesia does not block US market access just because those names are used.</li>
+          </ul>
+          <div class="baby"><b>Baby meaning:</b> Annex II is a \"name-protection from over-protection\" list. It keeps generic/common food names usable for US products.</div>
+        </div>
+      </details>
+
+      <details class="article" data-tags="non-tariff security commercial" open>
+        <summary>Annex III (Specific Commitments) - article-by-article baby map</summary>
+        <div class="article-body">
+          <h3>Section 1 (Art 1.1)</h3>
+          <ul>
+            <li><b>1.1 Other Taxes and Fees:</b> Indonesia reviews/adjusts internal taxes so imported like-products are not hit harder than domestic like-products.</li>
+          </ul>
+
+          <h3>Section 2A - Industrial and core non-tariff rules (Art 2.1 to 2.9)</h3>
+          <ul>
+            <li><b>2.1 Import Licensing:</b> submit WTO import-licensing questionnaire each year.</li>
+            <li><b>2.2 Local Content:</b> exempt US firms/goods from local content rules and forced domestic-spec requirements.</li>
+            <li><b>2.3 Testing/Certification:</b> accept accredited US conformity routes and remove duplicative tests.</li>
+            <li><b>2.4 Cabotage exemptions:</b> shipping/logistics carve-outs to reduce access frictions.</li>
+            <li><b>2.5 Medical devices/pharma:</b> accept FDA-related approvals/certificates and reduce repetitive reauthorization burdens.</li>
+            <li><b>2.6 Motor vehicles/parts:</b> accept US federal safety/emissions pathways and compliance procedures.</li>
+            <li><b>2.7 Remanufactured goods:</b> reduce restrictions on remanufactured imports.</li>
+            <li><b>2.8 Worn clothing:</b> adjust restrictive treatment in this category.</li>
+            <li><b>2.9 Halal (manufactured goods):</b> streamline recognition and avoid unnecessary certification burdens.</li>
+          </ul>
+          <div class="baby"><b>Baby meaning:</b> This block says \"do not hide barriers in technical paperwork, local content, and approvals.\"</div>
+
+          <h3>Section 2B - Agriculture and SPS-heavy rules (Art 2.10 to 2.23)</h3>
+          <ul>
+            <li><b>2.10 Import licensing for food/ag:</b> exempt US food/ag from commodity-balance and key licensing regimes; use automatic licensing only.</li>
+            <li><b>2.11 Certificates/system recognition:</b> recognize US SPS and accept US official certificates with controlled change process.</li>
+            <li><b>2.12 Facility registration/listing:</b> simplify dairy/meat/aquatic facility and certificate treatment.</li>
+            <li><b>2.13 Prior notice/time limits:</b> reduce timing frictions and arbitrary expiration barriers.</li>
+            <li><b>2.14 MRLs:</b> science/risk-based approach and proportionate handling of non-compliance.</li>
+            <li><b>2.15 FFPO recognition:</b> provide recognition and transparent adverse-action procedures.</li>
+            <li><b>2.16 Agricultural biotechnology:</b> process LLP events and biotech approvals with predictable procedures.</li>
+            <li><b>2.17-2.20 Horticulture/animal access + disease protocols:</b> timelines and science-based handling (including HPAI/ASF areas).</li>
+            <li><b>2.21-2.22 Live animals e-signature and halal food/ag:</b> reduce frictions and unnecessary requirements.</li>
+            <li><b>2.23 Bioethanol:</b> avoid measures that prevent US ethanol imports and support blend-policy rollout.</li>
+          </ul>
+          <div class="baby"><b>Baby meaning:</b> Big farming message: \"stop quota-by-paperwork and accept valid US certification systems.\"</div>
+
+          <h3>Section 2C - GI, IP, services, regulation, labor, environment, customs (Art 2.24 to 2.46)</h3>
+          <ul>
+            <li><b>2.24 GI procedures:</b> transparent fair GI process and safeguards against over-broad protection.</li>
+            <li><b>2.25-2.26 IP treaties/issues:</b> implement listed treaties and make practical IP-enforcement upgrades.</li>
+            <li><b>2.27 Onshoring export proceeds:</b> adjust treatment to reduce distortion against US trade/investment flows.</li>
+            <li><b>2.28 Foreign investment restrictions:</b> reduce discriminatory barriers.</li>
+            <li><b>2.29 Payment networks/chip standards:</b> keep room for international networks and accepted chip standards.</li>
+            <li><b>2.30 Other services:</b> ease delivery-services limits, keep licensing fees proportionate, and avoid new digital/service constraints.</li>
+            <li><b>2.31 Good regulatory practices:</b> publication, consultation, evidence-based design, and review of rules.</li>
+            <li><b>2.32-2.33 Labor law + enforcement:</b> strengthen legal framework and inspectorate enforcement tools.</li>
+            <li><b>2.34-2.40 Environment/fisheries/wildlife/CITES:</b> stronger governance and enforcement obligations.</li>
+            <li><b>2.41-2.46 Customs operations:</b> express shipments, advance rulings, pre-shipment inspection, pre-arrival data, proprietary-data protection, and customs-officer incentive governance.</li>
+          </ul>
+          <div class="baby"><b>Baby meaning:</b> This long block is \"clean up the rulebook\" so trade access is real, not blocked by hidden procedures.</div>
+
+          <h3>Section 3 (Art 3.1 to 3.3)</h3>
+          <ul>
+            <li><b>3.1:</b> commitments on intangible products/electronic transmissions.</li>
+            <li><b>3.2:</b> commitments on data transfer treatment.</li>
+            <li><b>3.3:</b> requirements framework for digital services providers.</li>
+          </ul>
+
+          <h3>Section 5 Security in Annex III (Art 5.1 to 5.5)</h3>
+          <ul>
+            <li><b>5.1 Steel excess capacity cooperation:</b> join forum and act on overcapacity impacts.</li>
+            <li><b>5.2 Equipment/platform security:</b> secure ICT/logistics ecosystem and supplier integrity.</li>
+            <li><b>5.3 Export controls:</b> robust control framework, screening, data sharing, and enforcement.</li>
+            <li><b>5.4 AD/CVD cooperation:</b> better circumvention-related cooperation.</li>
+            <li><b>5.5 Other commitments:</b> steps on nuclear liability framework commitment.</li>
+          </ul>
+
+          <h3>Section 6 Commercial in Annex III (Art 6.1 to 6.5)</h3>
+          <ul>
+            <li><b>6.1 Critical minerals:</b> remove restrictions and cooperate on critical-mineral supply chains.</li>
+            <li><b>6.2 Strategic investment:</b> facilitate outbound investment to US with minimum indicative value target.</li>
+            <li><b>6.3 Industrial cooperation:</b> apply equal legal requirements to industrial parks/facilities.</li>
+            <li><b>6.4 Energy purchases:</b> facilitate approvals for increased US energy purchases.</li>
+            <li><b>6.5 Investment:</b> support selected project cooperation (including energy/infrastructure tracks).</li>
+          </ul>
+          <div class="baby"><b>Baby meaning:</b> Annex III is the big compliance checklist. If this checklist is not delivered, tariff benefits become less stable.</div>
+        </div>
+      </details>
+
+      <details class="article" data-tags="commercial" open>
+        <summary>Annex IV (Purchase Commitments) - baby explainer with numbers</summary>
+        <div class="article-body">
+          <ul>
+            <li>Headline: Indonesia supports commercial arrangements to import US goods/services with indicative total up to <b>USD 33 billion</b>.</li>
+            <li><b>Industrial goods:</b> includes US energy, industrial commodities, manufactured goods, aerospace; energy-related value track at <b>USD 15 billion</b>, aerospace/commercial aircraft track at <b>USD 13.5 billion</b>.</li>
+            <li><b>Agricultural goods:</b> value track at <b>USD 4.5 billion</b>, with annual volume markers for products including cotton, soybeans, soybean meal, wheat, apples, beef, citrus, corn, corn gluten meal, ethanol, grapes, and rice (as listed).</li>
+            <li>Text in Annex IV includes a safeguard concept: if volume targets are missed but US finds no Indonesian trade barrier caused that miss, US should not automatically treat Indonesia as in breach for those lines.</li>
+          </ul>
+          <div class="baby"><b>Baby meaning:</b> Annex IV is the \"real buying plan\" side of the deal. It shows scale, product focus, and practical benchmarks.</div>
+        </div>
+      </details>
+    </section>
+
+    <section class="panel">
+      <h2>Simple Bottom Line (baby language)</h2>
+      <p>Think of ART like a <b>club membership</b> with benefits and chores. The benefit is better US tariff lanes for Indonesian goods. The chores are policy, security, and commercial commitments.</p>
+      <ul>
+        <li>If Indonesia does the chores well, lower-tariff access is more stable.</li>
+        <li>If Indonesia does not do the chores, the US has legal room to review, take action, or terminate and reimpose tougher reciprocal tariffs.</li>
+        <li>So this is not just a tariff deal. It is a <b>trade + security + investment alignment package</b>.</li>
+      </ul>
+
+      <p class="source"><b>Sources used:</b> US-IDN ART Full Agreement PDF in your folder (`US-IDN ART Full Agreement - US Final 2026.pdf`), including pages 1-10 (main articles), pages 11-15 (Annex I + Appendix 1 + US Schedule 2 notes), pages 16-17 (Annex II), pages 18-42 (Annex III), and pages 43-45 (Annex IV).</p>
+    </section>
+  </div>
+
+  <script>
+    const articles = [...document.querySelectorAll('.article')];
+
+    document.getElementById('expandAll').addEventListener('click', () => {
+      articles.forEach(d => d.open = true);
+    });
+
+    document.getElementById('collapseAll').addEventListener('click', () => {
+      articles.forEach(d => d.open = false);
+    });
+
+    document.querySelectorAll('[data-filter]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-filter');
+        articles.forEach(d => {
+          if (filter === 'all') {
+            d.hidden = false;
+            return;
+          }
+          const tags = (d.dataset.tags || '').split(/\s+/);
+          d.hidden = !tags.includes(filter);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

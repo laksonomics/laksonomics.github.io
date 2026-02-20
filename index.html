@@ -1,0 +1,409 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indonesia-US ART Explainer</title>
+  <style>
+    :root {
+      --paper: #f8f6f2;
+      --ink: #1f2a2b;
+      --muted: #566467;
+      --accent: #0f766e;
+      --accent-soft: #d8efe9;
+      --warn: #9a3412;
+      --ok: #14532d;
+      --card: #ffffff;
+      --line: #d9ddd7;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "IBM Plex Sans", "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 500px at 90% -10%, #e8f5f2, transparent 60%),
+        radial-gradient(900px 380px at -10% 0%, #f6ede2, transparent 65%),
+        var(--paper);
+      line-height: 1.33;
+    }
+
+    .wrap {
+      width: min(980px, 96vw);
+      margin: 14px auto 24px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .page {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px 18px 18px;
+      box-shadow: 0 3px 18px rgba(0, 0, 0, 0.05);
+    }
+
+    h1, h2, h3 { margin: 0; }
+
+    h1 {
+      font-family: "IBM Plex Serif", Georgia, "Times New Roman", serif;
+      font-weight: 700;
+      font-size: 26px;
+      letter-spacing: 0.2px;
+    }
+
+    h2 {
+      font-family: "IBM Plex Serif", Georgia, "Times New Roman", serif;
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+
+    h3 {
+      font-size: 14px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 6px;
+    }
+
+    p { margin: 0; }
+
+    .sub {
+      color: var(--muted);
+      margin-top: 4px;
+      font-size: 13px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 10px;
+      background: #fff;
+    }
+
+    .accent {
+      background: linear-gradient(140deg, #ecfaf6, #ffffff 60%);
+      border-color: #b7d6ce;
+    }
+
+    ul {
+      margin: 6px 0 0 16px;
+      padding: 0;
+    }
+
+    li { margin: 3px 0; font-size: 13px; }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 6px;
+    }
+
+    .chip {
+      font-size: 11px;
+      padding: 4px 7px;
+      border-radius: 999px;
+      border: 1px solid #bad8cf;
+      background: var(--accent-soft);
+      color: #0a3f3b;
+      font-weight: 600;
+    }
+
+    .flow {
+      display: grid;
+      grid-template-columns: 1fr 36px 1fr 36px 1fr;
+      align-items: start;
+      gap: 6px;
+      margin-top: 6px;
+    }
+
+    .arrow {
+      text-align: center;
+      font-weight: 800;
+      color: #6b7280;
+      padding-top: 22px;
+    }
+
+    .small {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .controls {
+      border: 1px solid #cde2db;
+      border-radius: 10px;
+      background: #f2fbf8;
+      padding: 10px;
+    }
+
+    .control-row {
+      display: grid;
+      grid-template-columns: 20px 1fr;
+      gap: 8px;
+      align-items: start;
+      margin: 5px 0;
+      font-size: 13px;
+    }
+
+    .status {
+      margin-top: 8px;
+      border-radius: 8px;
+      border: 1px solid #a8cfc2;
+      background: #ffffff;
+      padding: 8px;
+      font-size: 13px;
+    }
+
+    .status strong { color: var(--ok); }
+
+    .risk {
+      color: var(--warn);
+      font-weight: 700;
+    }
+
+    .sources {
+      margin-top: 8px;
+      padding-top: 7px;
+      border-top: 1px dashed #cfd8d3;
+      font-size: 11px;
+      color: #5f6d71;
+    }
+
+    .legend {
+      margin-top: 8px;
+      font-size: 12px;
+      color: #4b5563;
+    }
+
+    @media (max-width: 850px) {
+      .grid-2, .grid-3 { grid-template-columns: 1fr; }
+      .flow { grid-template-columns: 1fr; }
+      .arrow { display: none; }
+    }
+
+    @media print {
+      @page {
+        size: Letter;
+        margin: 0.45in;
+      }
+
+      body {
+        background: #ffffff;
+      }
+
+      .wrap {
+        width: 100%;
+        margin: 0;
+        gap: 0;
+      }
+
+      .page {
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 0;
+        break-after: page;
+      }
+
+      .page:last-child { break-after: auto; }
+
+      .card, .controls, .status {
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="page">
+      <h1>Indonesia-US ART: What drives lower US tariffs?</h1>
+      <p class="sub">Interactive explainer based on the signed Agreement Between the United States of America and the Republic of Indonesia on Reciprocal Trade (dated Feb 19, 2026).</p>
+
+      <div class="grid-2" style="margin-top:10px;">
+        <div class="card accent">
+          <h2>1) Tariff architecture in the deal</h2>
+          <ul>
+            <li><b>Schedule 2A (US side):</b> no additional reciprocal tariff under EO 14257.</li>
+            <li><b>Schedule 2B (US side):</b> reciprocal tariff rate is <b>0</b> (EO 14360 agriculture list).</li>
+            <li><b>All other Indonesian-origin goods:</b> additional US reciprocal tariff is capped at <b>no higher than 19%</b>.</li>
+            <li><b>Important:</b> these reciprocal tariffs are on top of normal US MFN tariff rates.</li>
+          </ul>
+          <div class="chips">
+            <span class="chip">Agreement p.2, Art 1.1(2)</span>
+            <span class="chip">Annex I p.I-5, Sch 2 Notes 2-5</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>2) What Indonesia must do to preserve and deepen access</h2>
+          <ul>
+            <li>Implement market-access and non-tariff commitments (import licensing, technical standards, SPS, IP, customs, digital, services).</li>
+            <li>Maintain economic and security alignment commitments (export controls, sanctions cooperation, anti-circumvention).</li>
+            <li>Avoid entering arrangements that the US deems to jeopardize essential US interests; otherwise US can terminate and reimpose EO 14257 reciprocal tariffs.</li>
+            <li>Support purchase and investment commitments that anchor reciprocity and political durability.</li>
+          </ul>
+          <div class="chips">
+            <span class="chip">Art 2 + Annex III</span>
+            <span class="chip">Art 5.1-5.3</span>
+            <span class="chip">Art 7.3-7.4</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:10px;">
+        <h2>How the tariff logic works in practice</h2>
+        <div class="flow">
+          <div class="card">
+            <h3>A. Product route</h3>
+            <ul>
+              <li>Is product in US Schedule 2A?</li>
+              <li>Or in US Schedule 2B?</li>
+            </ul>
+          </div>
+          <div class="arrow">-&gt;</div>
+          <div class="card">
+            <h3>B. Baseline outcome</h3>
+            <ul>
+              <li>2A: no extra reciprocal tariff.</li>
+              <li>2B: reciprocal tariff = 0.</li>
+              <li>Other lines: reciprocal tariff &lt;= 19%.</li>
+            </ul>
+          </div>
+          <div class="arrow">-&gt;</div>
+          <div class="card">
+            <h3>C. Retention risk</h3>
+            <ul>
+              <li>Non-compliance or import-surge disputes can trigger review/action under domestic law.</li>
+              <li>Termination can restore higher reciprocal tariff treatment.</li>
+            </ul>
+          </div>
+        </div>
+        <p class="legend"><b>Textiles lane:</b> The US also commits to a mechanism allowing certain Indonesian textiles/apparel to receive a zero reciprocal tariff rate, tied to Indonesian demand for US textile inputs.</p>
+      </div>
+
+      <div class="sources">
+        <b>Source anchors (agreement):</b> Art 1.1-1.2 (pp.1-2), Art 5.1-5.3 (pp.6-8), Art 6.3 (p.9), Art 7.3-7.4 (p.10), Annex I Schedule 2 General Notes 2-5 (p.I-5), Annex IV (p.IV-1).
+      </div>
+    </section>
+
+    <section class="page">
+      <h1>Likely implications: economic, political, security</h1>
+      <p class="sub">Use the scenario controls to test how implementation quality affects durability of lower US tariffs.</p>
+
+      <div class="grid-3" style="margin-top:10px;">
+        <div class="card">
+          <h2>Economic</h2>
+          <ul>
+            <li><b>Upside:</b> schedule-covered exports face better US market access; trade can re-route toward covered HS lines.</li>
+            <li><b>Upside:</b> textiles zero-rate channel can support labor-intensive exports if linked US input commitments are met.</li>
+            <li><b>Cost:</b> compliance and domestic reform burden (customs, SPS, digital, licensing, SOE behavior).</li>
+            <li><b>Reallocation:</b> Annex IV purchase/import commitments can shift sourcing toward US energy, agriculture, and aerospace.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Political</h2>
+          <ul>
+            <li><b>Bilateral gain:</b> stronger US-Indonesia economic tie with a rules-enforcement backbone.</li>
+            <li><b>Domestic pressure:</b> implementation touches sensitive areas (industrial policy, market access, foreign investment terms).</li>
+            <li><b>Diplomatic tradeoff:</b> Indonesia may face tighter room when balancing major-power economic relationships.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Security</h2>
+          <ul>
+            <li><b>Alignment:</b> stronger coordination on export controls, sanctions-related behavior, and anti-evasion.</li>
+            <li><b>Tech infrastructure:</b> commitments on secure ICT suppliers and logistics platforms increase cyber-security standards.</li>
+            <li><b>Strategic risk:</b> if security alignment weakens, tariff and broader economic benefits become less stable.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid-2" style="margin-top:10px;">
+        <div class="controls">
+          <h2 style="margin-bottom:2px;">Scenario controls</h2>
+          <div class="control-row">
+            <input type="checkbox" id="c1" checked>
+            <label for="c1">Indonesia fully implements core non-tariff commitments (Art 2 + Annex III).</label>
+          </div>
+          <div class="control-row">
+            <input type="checkbox" id="c2" checked>
+            <label for="c2">Indonesia maintains US-focused economic and security alignment (Art 5).</label>
+          </div>
+          <div class="control-row">
+            <input type="checkbox" id="c3" checked>
+            <label for="c3">No conflicting FTA/preferential agreement that triggers Art 5.3(3) concerns.</label>
+          </div>
+          <div class="control-row">
+            <input type="checkbox" id="c4" checked>
+            <label for="c4">Textile mechanism operational with linked US input flow (Art 6.3).</label>
+          </div>
+
+          <div id="statusBox" class="status"></div>
+        </div>
+
+        <div class="card">
+          <h2>Pragmatic bottom line</h2>
+          <ul>
+            <li>The deal gives Indonesia a clear tariff upside, but it behaves like a performance-based access regime, not a one-time concession.</li>
+            <li>Durability of lower tariffs depends on implementation depth and continued security/policy alignment.</li>
+            <li>For policymakers and firms, the key KPI is not only export growth but whether Indonesia stays inside the agreement's compliance and strategic alignment envelope.</li>
+          </ul>
+
+          <div class="sources">
+            <b>Implications note:</b> This section is an evidence-based inference from the treaty text and enforcement clauses, not a legal interpretation.
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    const ids = ['c1', 'c2', 'c3', 'c4'];
+    const box = document.getElementById('statusBox');
+
+    function updateStatus() {
+      const on = ids.map(id => document.getElementById(id).checked);
+      const score = on.filter(Boolean).length;
+
+      let html = '';
+
+      if (score === 4) {
+        html += '<strong>Likely tariff lane: Stable favorable access.</strong><br>';
+        html += 'Schedule 2A/2B benefits likely stay intact, other lines remain in the <=19% reciprocal lane, and textile zero-rate mechanism is most likely to be usable.';
+      } else if (score >= 2) {
+        html += '<strong>Likely tariff lane: Mixed durability.</strong><br>';
+        html += 'Base schedule benefits may continue, but risk of consultations, review, or restrictive actions rises if gaps persist.';
+      } else {
+        html += '<span class="risk">Likely tariff lane: High risk of preference erosion.</span><br>';
+        html += 'Weak implementation/alignment materially raises risk of US legal/policy action under enforcement terms and possible return to harsher reciprocal tariff treatment.';
+      }
+
+      if (!on[3]) {
+        html += '<br><br><b>Textiles note:</b> Without the operational linkage mechanism, zero-rate textile upside is limited.';
+      }
+
+      box.innerHTML = html;
+    }
+
+    ids.forEach(id => document.getElementById(id).addEventListener('change', updateStatus));
+    updateStatus();
+  </script>
+</body>
+</html>
