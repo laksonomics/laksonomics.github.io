@@ -200,10 +200,41 @@
       font-size: 12px;
       color: #4f5c70;
     }
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(180px, 1fr));
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .timeline-item {
+      border: 1px solid #cddaea;
+      background: linear-gradient(180deg, #f9fbff 0%, #eef5ff 100%);
+      border-radius: 10px;
+      padding: 10px;
+    }
+    .timeline-item h3 {
+      color: #1d3557;
+      font-size: 12px;
+      margin-bottom: 6px;
+    }
+    .timeline-item p {
+      font-size: 12px;
+      color: #334155;
+    }
+    .callout {
+      margin-top: 8px;
+      border: 1px solid #f3d8a3;
+      background: #fff7e7;
+      border-radius: 10px;
+      padding: 10px;
+      font-size: 13px;
+      color: #4a3a1c;
+    }
 
     @media (max-width: 900px) {
       .grid-2 { grid-template-columns: 1fr; }
       .downloads { grid-template-columns: 1fr; }
+      .timeline { grid-template-columns: 1fr; }
     }
 
     @media print {
@@ -232,12 +263,14 @@
         <span class="chip">Extra-deep on Security (Section 5)</span>
         <span class="chip">Extra-deep on Commercial (Section 6)</span>
         <span class="chip">Extra-deep on Non-tariff rules (Art 1.2 & 2.1 + Annex III 2.10)</span>
+        <span class="chip">Legal update: Supreme Court + tariff reset (Feb 20, 2026)</span>
       </div>
 
       <div class="controls">
         <button id="expandAll">Expand all</button>
         <button id="collapseAll">Collapse all</button>
         <button class="btn-focus" data-filter="all">Show all</button>
+        <button class="btn-focus" data-filter="legal-update">Only legal update</button>
         <button class="btn-focus" data-filter="non-tariff">Only non-tariff</button>
         <button class="btn-focus" data-filter="security">Only security</button>
         <button class="btn-focus" data-filter="commercial">Only commercial</button>
@@ -265,6 +298,79 @@
           <span>File: US_IDN_ART_schedules_2026.xlsx</span>
         </a>
       </div>
+    </section>
+
+    <section class="panel">
+      <h2>Breaking Update: Supreme Court + Tariff Reset (Feb 20, 2026)</h2>
+      <p class="sub">Baby-language legal update for the Indonesia-US ART. This explains what changed and what it likely means at customs.</p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Step 1: Supreme Court ruling (Feb 20, 2026)</h3>
+          <p>The Court said IEEPA does not give tariff power for the reciprocal-tariff program. So that legal switch was turned off.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Step 2: New temporary legal basis (same day)</h3>
+          <p>The White House moved to Trade Act section 122 and announced a temporary 10% extra import duty for most imports.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Step 3: Effective date (Feb 24, 2026)</h3>
+          <p>New 10% measure starts at 12:01 a.m. EST, with listed exceptions and existing section 232 duties still applicable.</p>
+        </div>
+      </div>
+      <div class="callout"><b>Short baby summary:</b> The old tariff machine (IEEPA) was rejected by the Court. The US then started a temporary new machine (section 122), set at 10% for most imports while it works on longer-term legal steps.</div>
+    </section>
+
+    <section class="panel">
+      <h2>FAQ: What this means for Indonesia-US ART</h2>
+
+      <details class="article" data-tags="legal-update security" open>
+        <summary>Q1) Did the Supreme Court say Trump's IEEPA reciprocal tariff was illegal?</summary>
+        <div class="article-body">
+          <ul>
+            <li><b>Yes for legal authority:</b> the Court held IEEPA does not authorize this tariff program.</li>
+            <li><b>Important limit:</b> the Court did <b>not</b> say all tariffs are illegal; it said this specific legal basis (IEEPA) cannot carry these tariffs.</li>
+          </ul>
+          <div class="baby"><b>Baby meaning:</b> The Court did not ban tariffs. It said, “You used the wrong law button for this tariff.”</div>
+        </div>
+      </details>
+
+      <details class="article" data-tags="legal-update commercial" open>
+        <summary>Q2) For Indonesia, is the tariff now 10% or still 19%?</summary>
+        <div class="article-body">
+          <ul>
+            <li>The ART Schedule 2 language tied many lines to a reciprocal-tariff framework that had used IEEPA executive orders.</li>
+            <li>After the Supreme Court ruling, those IEEPA tariff orders are no longer a valid tariff legal basis.</li>
+            <li>On February 20, 2026, the White House announced a temporary <b>10%</b> additional duty under Trade Act section 122 (effective February 24, 2026), with exceptions in annexes.</li>
+            <li><b>Working interpretation:</b> from February 24, 2026, most Indonesia-origin goods are in the temporary 10% bucket (unless an exception or another duty applies), not an automatic 19% IEEPA bucket.</li>
+          </ul>
+          <div class="baby"><b>Baby meaning:</b> Think of it like price tags. The old 19%-based IEEPA tag lost its legal sticker. A new temporary 10% tag was then put on most imports.</div>
+          <div class="impact"><span class="warn">Watchpoint:</span> This can change again if US issues a new country-specific tariff instrument under a different statute.</div>
+        </div>
+      </details>
+
+      <details class="article" data-tags="legal-update security commercial" open>
+        <summary>Q3) Does this kill Indonesia-US ART?</summary>
+        <div class="article-body">
+          <ul>
+            <li><b>No automatic cancellation:</b> USTR said the Administration remains confident bilateral trade agreements (including ARTs) remain in effect.</li>
+            <li><b>But tariff mechanics changed:</b> US now needs a valid domestic law path to apply country-specific tariff outcomes promised under ART.</li>
+            <li>Non-tariff, security, and commercial commitments in ART still matter politically and for future tariff treatment design.</li>
+          </ul>
+          <div class="baby"><b>Baby meaning:</b> The agreement book is still on the table. But the old tariff calculator inside that book broke, so the US is using a temporary calculator now.</div>
+        </div>
+      </details>
+
+      <details class="article" data-tags="legal-update" open>
+        <summary>Q4) Does the Supreme Court decision make the old IEEPA executive orders totally invalid?</summary>
+        <div class="article-body">
+          <ul>
+            <li><b>For tariff authority under IEEPA:</b> yes, that legal route was rejected by the Court for this reciprocal-tariff program.</li>
+            <li><b>For order text as a whole:</b> the February 20, 2026 proclamation says EO 14257 and EO 14360 are superseded <b>to the extent inconsistent</b> with the new section 122 action.</li>
+            <li><b>Practical customs answer:</b> the IEEPA tariff lane cannot be the current legal engine for collecting the old reciprocal-tariff rates after the ruling; section 122 is the temporary engine.</li>
+          </ul>
+          <div class="baby"><b>Baby meaning:</b> The Court unplugged the old IEEPA tariff machine. The White House did not burn every old paper, but it switched the active machine to a temporary 10% machine.</div>
+        </div>
+      </details>
     </section>
 
     <section class="panel">
@@ -780,7 +886,7 @@
         <li>So this is not just a tariff deal. It is a <b>trade + security + investment alignment package</b>.</li>
       </ul>
 
-      <p class="source"><b>Sources used:</b> US-IDN ART Full Agreement PDF in your folder (`US-IDN ART Full Agreement - US Final 2026.pdf`), including pages 1-10 (main articles), pages 11-15 (Annex I + Appendix 1 + US Schedule 2 notes), pages 16-17 (Annex II), pages 18-42 (Annex III), and pages 43-45 (Annex IV). For the NME list in Article 5.1 notes: US Department of Commerce, Trade.gov, NME Countries List (accessed February 20, 2026).</p>
+      <p class="source"><b>Sources used:</b> US-IDN ART Full Agreement PDF in your folder (`US-IDN ART Full Agreement - US Final 2026.pdf`), including pages 1-10 (main articles), pages 11-15 (Annex I + Appendix 1 + US Schedule 2 notes), pages 16-17 (Annex II), pages 18-42 (Annex III), and pages 43-45 (Annex IV). For the NME list in Article 5.1 notes: US Department of Commerce, Trade.gov, NME Countries List (accessed February 20, 2026). For the legal update: US Supreme Court opinion (February 20, 2026, No. 25-250), White House Proclamation “Regulating Imports with a Reciprocal Tariff to Rectify Trade Practices that Contribute to Large and Persistent Annual United States Goods Trade Deficits” (February 20, 2026; temporary section 122 10% effective February 24, 2026; section 11 says EO 14257 and EO 14360 are superseded to the extent inconsistent), and USTR Statement by Ambassador Greer on the Supreme Court Decision (February 20, 2026).</p>
     </section>
   </div>
 
