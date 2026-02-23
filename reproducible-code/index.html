@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reproducible Code | Riandy Laksono</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-nav">
+    <div class="nav-inner">
+      <a class="brand" href="../index.html#top"><span class="brand-mark">RL</span><span>Riandy Laksono</span></a>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+      <nav id="navLinks" class="nav-links" aria-label="Main">
+        <a href="../index.html#publications">Publications</a>
+        <a href="../blog/">Blog</a>
+        <a href="../index.html">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-block" style="margin-top: 1rem;">
+      <h1 class="section-title">Reproducible Code</h1>
+      <p class="section-subtitle">Replication workspaces linked to publications listed in CV_RL_2026.</p>
+      <div class="highlight-band">
+        <p>Each publication card on the homepage links to one reproducible-code workspace.</p>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="code-grid">
+        <article class="card"><h3>Green Industrial Policies in a Fragmented World: A View from the Global South.</h3><p class="meta">2026 | Working Paper</p><div class="actions"><a class="btn btn-primary" href="./green-industrial-policy-fragmented-world/">Open Code Workspace</a></div></article>
+        <article class="card"><h3>Labor Market Impact of Export in a Commodity-Dependent Nation: The Case of Indonesia.</h3><p class="meta">2024 | Working Paper</p><div class="actions"><a class="btn btn-primary" href="./labor-market-impact-export/">Open Code Workspace</a></div></article>
+        <article class="card"><h3>The dynamics of labor share decline in manufacturing: Evidence from Indonesia.</h3><p class="meta">2024 | Working Paper</p><div class="actions"><a class="btn btn-primary" href="./labor-share-decline-manufacturing/">Open Code Workspace</a></div></article>
+        <article class="card"><h3>Nickel nationalism holds back Indonesia's clean tech ambitions.</h3><p class="meta">2026 | Policy Commentary</p><div class="actions"><a class="btn btn-primary" href="./nickel-nationalism-clean-tech-ambitions/">Open Code Workspace</a></div></article>
+        <article class="card"><h3>Recalibrating Southeast Asian trade policy in a world of economic fragmentation.</h3><p class="meta">2025 | Policy Commentary</p><div class="actions"><a class="btn btn-primary" href="./recalibrating-southeast-asian-trade-policy/">Open Code Workspace</a></div></article>
+        <article class="card"><h3>Can Indonesia navigate global economic turbulence under Prabowo?</h3><p class="meta">2025 | Policy Commentary</p><div class="actions"><a class="btn btn-primary" href="./can-indonesia-navigate-global-turbulence/">Open Code Workspace</a></div></article>
+        <article class="card"><h3>Indonesia should respond to Trump's tariffs with import deregulation.</h3><p class="meta">2025 | Policy Commentary</p><div class="actions"><a class="btn btn-primary" href="./indonesia-respond-trump-tariffs/">Open Code Workspace</a></div></article>
+        <article class="card"><h3>Restoring free meals program as a child nutrition initiative.</h3><p class="meta">2025 | Policy Commentary</p><div class="actions"><a class="btn btn-primary" href="./restoring-free-meals-child-nutrition/">Open Code Workspace</a></div></article>
+        <article class="card"><h3>Why Prabowo's misguided austerity is emblematic of his free-wheeling economic policy.</h3><p class="meta">2025 | Policy Commentary</p><div class="actions"><a class="btn btn-primary" href="./prabowos-misguided-austerity/">Open Code Workspace</a></div></article>
+        <article class="card"><h3>Prabowo's pursuit of 8 per cent growth won't be without problems.</h3><p class="meta">2024 | Policy Commentary</p><div class="actions"><a class="btn btn-primary" href="./prabowos-pursuit-8-percent-growth/">Open Code Workspace</a></div></article>
+        <article class="card"><h3>Return of the technocrats: Can Prabowo's economic team prove the doubters wrong?</h3><p class="meta">2024 | Policy Commentary</p><div class="actions"><a class="btn btn-primary" href="./return-of-technocrats/">Open Code Workspace</a></div></article>
+        <article class="card"><h3>How Prabowo's 8% growth target will shape Indonesia's fiscal policy.</h3><p class="meta">2024 | Policy Commentary</p><div class="actions"><a class="btn btn-primary" href="./how-prabowos-8-growth-target/">Open Code Workspace</a></div></article>
+        <article class="card"><h3>Economic and Political Freedom and Growth in Eight ASEAN Countries (1997-2007).</h3><p class="meta">2010 | Journal Article</p><div class="actions"><a class="btn btn-primary" href="./economic-political-freedom-asean-growth/">Open Code Workspace</a></div></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">Reproducible code hub | <a href="../index.html">Back to homepage</a></footer>
+  <script>
+    (function () {
+      const toggle = document.getElementById('navToggle');
+      const links = document.getElementById('navLinks');
+      if (!toggle || !links) return;
+
+      toggle.addEventListener('click', function () {
+        const isOpen = links.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+
+      links.querySelectorAll('a').forEach(function (anchor) {
+        anchor.addEventListener('click', function () {
+          links.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nickel nationalism holds back Indonesia's clean tech ambitions. | Code Workspace</title>
+  <link rel="stylesheet" href="../../assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-nav">
+    <div class="nav-inner">
+      <a class="brand" href="../../index.html#top"><span class="brand-mark">RL</span><span>Riandy Laksono</span></a>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+      <nav id="navLinks" class="nav-links" aria-label="Main">
+        <a href="../../index.html#publications">Publications</a>
+        <a href="../index.html">All Code Workspaces</a>
+        <a href="../../index.html">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-block" style="margin-top: 1rem;">
+      <h1 class="section-title">Nickel nationalism holds back Indonesia's clean tech ambitions.</h1>
+      <p class="section-subtitle">2026 | Policy Commentary</p>
+      <div class="highlight-band">
+        <p>This workspace is reserved for data processing, estimation code, and replication logs for this publication.</p>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <h2 class="section-title">Planned Structure</h2>
+      <div class="code-grid">
+        <article class="card">
+          <h3>01_data/</h3>
+          <p>Metadata, source references, and data dictionary.</p>
+        </article>
+        <article class="card">
+          <h3>02_code/</h3>
+          <p>Reusable scripts for processing and estimation.</p>
+        </article>
+        <article class="card">
+          <h3>03_output/</h3>
+          <p>Tables, figures, and replication logs.</p>
+        </article>
+        <article class="card">
+          <h3>README</h3>
+          <p>Environment setup, execution order, and expected outputs.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">Code workspace | <a href="../index.html">Back to code hub</a></footer>
+  <script>
+    (function () {
+      const toggle = document.getElementById('navToggle');
+      const links = document.getElementById('navLinks');
+      if (!toggle || !links) return;
+
+      toggle.addEventListener('click', function () {
+        const isOpen = links.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+
+      links.querySelectorAll('a').forEach(function (anchor) {
+        anchor.addEventListener('click', function () {
+          links.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

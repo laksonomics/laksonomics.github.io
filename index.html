@@ -3,407 +3,329 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Indonesia-US ART Explainer</title>
-  <style>
-    :root {
-      --paper: #f8f6f2;
-      --ink: #1f2a2b;
-      --muted: #566467;
-      --accent: #0f766e;
-      --accent-soft: #d8efe9;
-      --warn: #9a3412;
-      --ok: #14532d;
-      --card: #ffffff;
-      --line: #d9ddd7;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: "IBM Plex Sans", "Segoe UI", Arial, sans-serif;
-      color: var(--ink);
-      background:
-        radial-gradient(1200px 500px at 90% -10%, #e8f5f2, transparent 60%),
-        radial-gradient(900px 380px at -10% 0%, #f6ede2, transparent 65%),
-        var(--paper);
-      line-height: 1.33;
-    }
-
-    .wrap {
-      width: min(980px, 96vw);
-      margin: 14px auto 24px;
-      display: grid;
-      gap: 14px;
-    }
-
-    .page {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 16px 18px 18px;
-      box-shadow: 0 3px 18px rgba(0, 0, 0, 0.05);
-    }
-
-    h1, h2, h3 { margin: 0; }
-
-    h1 {
-      font-family: "IBM Plex Serif", Georgia, "Times New Roman", serif;
-      font-weight: 700;
-      font-size: 26px;
-      letter-spacing: 0.2px;
-    }
-
-    h2 {
-      font-family: "IBM Plex Serif", Georgia, "Times New Roman", serif;
-      font-size: 18px;
-      margin-bottom: 6px;
-    }
-
-    h3 {
-      font-size: 14px;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 6px;
-    }
-
-    p { margin: 0; }
-
-    .sub {
-      color: var(--muted);
-      margin-top: 4px;
-      font-size: 13px;
-    }
-
-    .grid-2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-    }
-
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-    }
-
-    .card {
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      padding: 10px;
-      background: #fff;
-    }
-
-    .accent {
-      background: linear-gradient(140deg, #ecfaf6, #ffffff 60%);
-      border-color: #b7d6ce;
-    }
-
-    ul {
-      margin: 6px 0 0 16px;
-      padding: 0;
-    }
-
-    li { margin: 3px 0; font-size: 13px; }
-
-    .chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-top: 6px;
-    }
-
-    .chip {
-      font-size: 11px;
-      padding: 4px 7px;
-      border-radius: 999px;
-      border: 1px solid #bad8cf;
-      background: var(--accent-soft);
-      color: #0a3f3b;
-      font-weight: 600;
-    }
-
-    .flow {
-      display: grid;
-      grid-template-columns: 1fr 36px 1fr 36px 1fr;
-      align-items: start;
-      gap: 6px;
-      margin-top: 6px;
-    }
-
-    .arrow {
-      text-align: center;
-      font-weight: 800;
-      color: #6b7280;
-      padding-top: 22px;
-    }
-
-    .small {
-      font-size: 12px;
-      color: var(--muted);
-    }
-
-    .controls {
-      border: 1px solid #cde2db;
-      border-radius: 10px;
-      background: #f2fbf8;
-      padding: 10px;
-    }
-
-    .control-row {
-      display: grid;
-      grid-template-columns: 20px 1fr;
-      gap: 8px;
-      align-items: start;
-      margin: 5px 0;
-      font-size: 13px;
-    }
-
-    .status {
-      margin-top: 8px;
-      border-radius: 8px;
-      border: 1px solid #a8cfc2;
-      background: #ffffff;
-      padding: 8px;
-      font-size: 13px;
-    }
-
-    .status strong { color: var(--ok); }
-
-    .risk {
-      color: var(--warn);
-      font-weight: 700;
-    }
-
-    .sources {
-      margin-top: 8px;
-      padding-top: 7px;
-      border-top: 1px dashed #cfd8d3;
-      font-size: 11px;
-      color: #5f6d71;
-    }
-
-    .legend {
-      margin-top: 8px;
-      font-size: 12px;
-      color: #4b5563;
-    }
-
-    @media (max-width: 850px) {
-      .grid-2, .grid-3 { grid-template-columns: 1fr; }
-      .flow { grid-template-columns: 1fr; }
-      .arrow { display: none; }
-    }
-
-    @media print {
-      @page {
-        size: Letter;
-        margin: 0.45in;
-      }
-
-      body {
-        background: #ffffff;
-      }
-
-      .wrap {
-        width: 100%;
-        margin: 0;
-        gap: 0;
-      }
-
-      .page {
-        border: none;
-        box-shadow: none;
-        border-radius: 0;
-        padding: 0;
-        break-after: page;
-      }
-
-      .page:last-child { break-after: auto; }
-
-      .card, .controls, .status {
-        break-inside: avoid;
-      }
-    }
-  </style>
+  <meta name="description" content="Riandy Laksono academic website: profile, publications, commentary, media presence, and policy blog." />
+  <title>Riandy Laksono | Trade Economist</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-  <div class="wrap">
-    <section class="page">
-      <h1>Indonesia-US ART: What drives lower US tariffs?</h1>
-      <p class="sub">Interactive explainer based on the signed Agreement Between the United States of America and the Republic of Indonesia on Reciprocal Trade (dated Feb 19, 2026).</p>
+  <header class="site-nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark">RL</span>
+        <span>Riandy Laksono</span>
+      </a>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+      <nav id="navLinks" class="nav-links" aria-label="Main">
+        <a href="#top">Home</a>
+        <a href="#publications">Publications</a>
+        <a href="#commentary">Commentary</a>
+        <a href="#media">Media</a>
+        <a href="blog/">Blog</a>
+        <a href="reproducible-code/">Code</a>
+      </nav>
+    </div>
+  </header>
 
-      <div class="grid-2" style="margin-top:10px;">
-        <div class="card accent">
-          <h2>1) Tariff architecture in the deal</h2>
-          <ul>
-            <li><b>Schedule 2A (US side):</b> no additional reciprocal tariff under EO 14257.</li>
-            <li><b>Schedule 2B (US side):</b> reciprocal tariff rate is <b>0</b> (EO 14360 agriculture list).</li>
-            <li><b>All other Indonesian-origin goods:</b> additional US reciprocal tariff is capped at <b>no higher than 19%</b>.</li>
-            <li><b>Important:</b> these reciprocal tariffs are on top of normal US MFN tariff rates.</li>
-          </ul>
-          <div class="chips">
-            <span class="chip">Agreement p.2, Art 1.1(2)</span>
-            <span class="chip">Annex I p.I-5, Sch 2 Notes 2-5</span>
-          </div>
+  <main id="top">
+    <section class="section-block hero fade-up">
+      <img class="hero-photo" src="assets/images/riandy-laksono-profile.jpg" alt="Riandy Laksono profile photo" />
+      <div>
+        <h1>Riandy Laksono, Ph.D.</h1>
+        <p class="title-line">Senior Economist | Postdoctoral Researcher, VU Amsterdam | Trade, Industrial, and Development Policy</p>
+        <p class="summary">Trade and development economist with 15 years of policy and research experience across ASEAN and East Asia. Current postdoctoral researcher at VU Amsterdam and Researcher (on leave) at CSIS Indonesia. Research focus: international trade, industrial policy, labour markets, and green transition strategy.</p>
+
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="mailto:r.l.edy@vu.nl">Email</a>
+          <a class="btn btn-soft" href="mailto:laksonomics@gmail.com">Secondary Email</a>
+          <a class="btn btn-soft" href="https://www.linkedin.com/in/riandy-laksono/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="btn btn-soft" href="https://github.com/laksonomics" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="btn btn-soft" href="assets/docs/CV_RL_2026.pdf" target="_blank" rel="noopener noreferrer">CV (2026)</a>
         </div>
 
-        <div class="card">
-          <h2>2) What Indonesia must do to preserve and deepen access</h2>
-          <ul>
-            <li>Implement market-access and non-tariff commitments (import licensing, technical standards, SPS, IP, customs, digital, services).</li>
-            <li>Maintain economic and security alignment commitments (export controls, sanctions cooperation, anti-circumvention).</li>
-            <li>Avoid entering arrangements that the US deems to jeopardize essential US interests; otherwise US can terminate and reimpose EO 14257 reciprocal tariffs.</li>
-            <li>Support purchase and investment commitments that anchor reciprocity and political durability.</li>
-          </ul>
-          <div class="chips">
-            <span class="chip">Art 2 + Annex III</span>
-            <span class="chip">Art 5.1-5.3</span>
-            <span class="chip">Art 7.3-7.4</span>
+        <div class="quick-metrics">
+          <div class="metric">
+            <strong>15+</strong>
+            <span>Years in trade policy</span>
           </div>
-        </div>
-      </div>
-
-      <div class="card" style="margin-top:10px;">
-        <h2>How the tariff logic works in practice</h2>
-        <div class="flow">
-          <div class="card">
-            <h3>A. Product route</h3>
-            <ul>
-              <li>Is product in US Schedule 2A?</li>
-              <li>Or in US Schedule 2B?</li>
-            </ul>
+          <div class="metric">
+            <strong>13</strong>
+            <span>Selected publications</span>
           </div>
-          <div class="arrow">-&gt;</div>
-          <div class="card">
-            <h3>B. Baseline outcome</h3>
-            <ul>
-              <li>2A: no extra reciprocal tariff.</li>
-              <li>2B: reciprocal tariff = 0.</li>
-              <li>Other lines: reciprocal tariff &lt;= 19%.</li>
-            </ul>
-          </div>
-          <div class="arrow">-&gt;</div>
-          <div class="card">
-            <h3>C. Retention risk</h3>
-            <ul>
-              <li>Non-compliance or import-surge disputes can trigger review/action under domestic law.</li>
-              <li>Termination can restore higher reciprocal tariff treatment.</li>
-            </ul>
-          </div>
-        </div>
-        <p class="legend"><b>Textiles lane:</b> The US also commits to a mechanism allowing certain Indonesian textiles/apparel to receive a zero reciprocal tariff rate, tied to Indonesian demand for US textile inputs.</p>
-      </div>
-
-      <div class="sources">
-        <b>Source anchors (agreement):</b> Art 1.1-1.2 (pp.1-2), Art 5.1-5.3 (pp.6-8), Art 6.3 (p.9), Art 7.3-7.4 (p.10), Annex I Schedule 2 General Notes 2-5 (p.I-5), Annex IV (p.IV-1).
-      </div>
-    </section>
-
-    <section class="page">
-      <h1>Likely implications: economic, political, security</h1>
-      <p class="sub">Use the scenario controls to test how implementation quality affects durability of lower US tariffs.</p>
-
-      <div class="grid-3" style="margin-top:10px;">
-        <div class="card">
-          <h2>Economic</h2>
-          <ul>
-            <li><b>Upside:</b> schedule-covered exports face better US market access; trade can re-route toward covered HS lines.</li>
-            <li><b>Upside:</b> textiles zero-rate channel can support labor-intensive exports if linked US input commitments are met.</li>
-            <li><b>Cost:</b> compliance and domestic reform burden (customs, SPS, digital, licensing, SOE behavior).</li>
-            <li><b>Reallocation:</b> Annex IV purchase/import commitments can shift sourcing toward US energy, agriculture, and aerospace.</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h2>Political</h2>
-          <ul>
-            <li><b>Bilateral gain:</b> stronger US-Indonesia economic tie with a rules-enforcement backbone.</li>
-            <li><b>Domestic pressure:</b> implementation touches sensitive areas (industrial policy, market access, foreign investment terms).</li>
-            <li><b>Diplomatic tradeoff:</b> Indonesia may face tighter room when balancing major-power economic relationships.</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h2>Security</h2>
-          <ul>
-            <li><b>Alignment:</b> stronger coordination on export controls, sanctions-related behavior, and anti-evasion.</li>
-            <li><b>Tech infrastructure:</b> commitments on secure ICT suppliers and logistics platforms increase cyber-security standards.</li>
-            <li><b>Strategic risk:</b> if security alignment weakens, tariff and broader economic benefits become less stable.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="grid-2" style="margin-top:10px;">
-        <div class="controls">
-          <h2 style="margin-bottom:2px;">Scenario controls</h2>
-          <div class="control-row">
-            <input type="checkbox" id="c1" checked>
-            <label for="c1">Indonesia fully implements core non-tariff commitments (Art 2 + Annex III).</label>
-          </div>
-          <div class="control-row">
-            <input type="checkbox" id="c2" checked>
-            <label for="c2">Indonesia maintains US-focused economic and security alignment (Art 5).</label>
-          </div>
-          <div class="control-row">
-            <input type="checkbox" id="c3" checked>
-            <label for="c3">No conflicting FTA/preferential agreement that triggers Art 5.3(3) concerns.</label>
-          </div>
-          <div class="control-row">
-            <input type="checkbox" id="c4" checked>
-            <label for="c4">Textile mechanism operational with linked US input flow (Art 6.3).</label>
-          </div>
-
-          <div id="statusBox" class="status"></div>
-        </div>
-
-        <div class="card">
-          <h2>Pragmatic bottom line</h2>
-          <ul>
-            <li>The deal gives Indonesia a clear tariff upside, but it behaves like a performance-based access regime, not a one-time concession.</li>
-            <li>Durability of lower tariffs depends on implementation depth and continued security/policy alignment.</li>
-            <li>For policymakers and firms, the key KPI is not only export growth but whether Indonesia stays inside the agreement's compliance and strategic alignment envelope.</li>
-          </ul>
-
-          <div class="sources">
-            <b>Implications note:</b> This section is an evidence-based inference from the treaty text and enforcement clauses, not a legal interpretation.
+          <div class="metric">
+            <strong>2026</strong>
+            <span>VU Amsterdam postdoc</span>
           </div>
         </div>
       </div>
     </section>
-  </div>
+
+    <section class="section-block fade-up fade-2">
+      <h2 class="section-title">Education and Professional Affiliations</h2>
+      <p class="section-subtitle">Institutions from CV_RL_2026 with quick-access links.</p>
+      <div class="affiliations">
+        <a class="affiliation-chip" href="https://vu.nl/en" target="_blank" rel="noopener noreferrer"><span class="mono-badge">VU</span><span><strong>VU Amsterdam</strong><span class="meta">Postdoctoral Researcher (2025-2026)</span></span></a>
+        <a class="affiliation-chip" href="https://www.anu.edu.au" target="_blank" rel="noopener noreferrer"><span class="mono-badge">ANU</span><span><strong>Australian National University</strong><span class="meta">Ph.D. in Economics (2025)</span></span></a>
+        <a class="affiliation-chip" href="https://www.ui.ac.id" target="_blank" rel="noopener noreferrer"><span class="mono-badge">UI</span><span><strong>Universitas Indonesia</strong><span class="meta">M.Sc. in Economics</span></span></a>
+        <a class="affiliation-chip" href="https://www.ipb.ac.id" target="_blank" rel="noopener noreferrer"><span class="mono-badge">IPB</span><span><strong>IPB University</strong><span class="meta">B.Sc. in Economics</span></span></a>
+        <a class="affiliation-chip" href="https://www.csis.or.id" target="_blank" rel="noopener noreferrer"><span class="mono-badge">CSIS</span><span><strong>CSIS Indonesia</strong><span class="meta">Researcher (on leave)</span></span></a>
+        <a class="affiliation-chip" href="https://prospera.or.id" target="_blank" rel="noopener noreferrer"><span class="mono-badge">PR</span><span><strong>Prospera</strong><span class="meta">Trade and Investment Economist</span></span></a>
+        <a class="affiliation-chip" href="https://www.iacepa-katalis.org" target="_blank" rel="noopener noreferrer"><span class="mono-badge">KTL</span><span><strong>IACEPA Katalis</strong><span class="meta">Trade and Investment Economist</span></span></a>
+        <a class="affiliation-chip" href="https://www.eria.org" target="_blank" rel="noopener noreferrer"><span class="mono-badge">ERIA</span><span><strong>ERIA</strong><span class="meta">Research Associate</span></span></a>
+      </div>
+
+      <div class="highlight-band">
+        <p><strong>Core expertise:</strong> international trade, industrial and investment policy, regional integration, labour policy, macroeconomics, and geoeconomics.</p>
+      </div>
+    </section>
+
+    <section class="section-block fade-up fade-3" id="publications">
+      <h2 class="section-title">Selected Publications (CV_RL_2026)</h2>
+      <p class="section-subtitle">All paper links point to exact publisher pages; every entry includes a reproducible-code workspace.</p>
+
+      <div class="pub-grid">
+        <article class="card">
+          <h3>Green Industrial Policies in a Fragmented World: A View from the Global South.</h3>
+          <p class="meta">2026 | CSIS Working Paper</p>
+          <div class="tag-row"><span class="tag">Working Paper</span><span class="tag">Green Industry</span></div>
+          <div class="actions">
+            <a class="btn btn-soft" href="https://www.csis.or.id/publication/green-industrial-policy-in-a-fragmented-world/" target="_blank" rel="noopener noreferrer">Paper</a>
+            <a class="btn btn-primary" href="reproducible-code/green-industrial-policy-fragmented-world/">Code</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Labor Market Impact of Export in a Commodity-Dependent Nation: The Case of Indonesia.</h3>
+          <p class="meta">2024 | ADBI Working Paper Series No. 1481</p>
+          <div class="tag-row"><span class="tag">Working Paper</span><span class="tag">Labor Markets</span></div>
+          <div class="actions">
+            <a class="btn btn-soft" href="https://doi.org/10.56506/BQNN1863" target="_blank" rel="noopener noreferrer">Paper</a>
+            <a class="btn btn-primary" href="reproducible-code/labor-market-impact-export/">Code</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>The dynamics of labor share decline in manufacturing: Evidence from Indonesia.</h3>
+          <p class="meta">2024 | ACDE Working Papers in Trade and Development No. 2024/03</p>
+          <div class="tag-row"><span class="tag">Working Paper</span><span class="tag">Manufacturing</span></div>
+          <div class="actions">
+            <a class="btn btn-soft" href="https://crawford.anu.edu.au/acde/content-centre/research/dynamics-labor-share-decline-manufacturing-evidence-indonesia" target="_blank" rel="noopener noreferrer">Paper</a>
+            <a class="btn btn-primary" href="reproducible-code/labor-share-decline-manufacturing/">Code</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Nickel nationalism holds back Indonesia's clean tech ambitions.</h3>
+          <p class="meta">2026 | East Asia Forum Quarterly 18(1)</p>
+          <div class="tag-row"><span class="tag">Policy Commentary</span><span class="tag">Critical Minerals</span></div>
+          <div class="actions">
+            <a class="btn btn-soft" href="https://press.anu.edu.au/publications/journals/east-asia-forum-quarterly/east-asia-forum-quarterly-volume-18-number-1-2026" target="_blank" rel="noopener noreferrer">Paper</a>
+            <a class="btn btn-primary" href="reproducible-code/nickel-nationalism-clean-tech-ambitions/">Code</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Recalibrating Southeast Asian trade policy in a world of economic fragmentation.</h3>
+          <p class="meta">2025 | East Asia Forum</p>
+          <div class="tag-row"><span class="tag">Policy Commentary</span><span class="tag">Regional Trade</span></div>
+          <div class="actions">
+            <a class="btn btn-soft" href="https://eastasiaforum.org/2025/09/20/recalibrating-southeast-asian-trade-policy-in-a-world-of-economic-fragmentation/" target="_blank" rel="noopener noreferrer">Paper</a>
+            <a class="btn btn-primary" href="reproducible-code/recalibrating-southeast-asian-trade-policy/">Code</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Can Indonesia navigate global economic turbulence under Prabowo?</h3>
+          <p class="meta">2025 | Indonesia at Melbourne</p>
+          <div class="tag-row"><span class="tag">Policy Commentary</span><span class="tag">Macroeconomics</span></div>
+          <div class="actions">
+            <a class="btn btn-soft" href="https://indonesiaatmelbourne.unimelb.edu.au/can-indonesia-navigate-global-economic-turbulence-under-prabowo/" target="_blank" rel="noopener noreferrer">Paper</a>
+            <a class="btn btn-primary" href="reproducible-code/can-indonesia-navigate-global-turbulence/">Code</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Indonesia should respond to Trump's tariffs with import deregulation.</h3>
+          <p class="meta">2025 | The Jakarta Post</p>
+          <div class="tag-row"><span class="tag">Policy Commentary</span><span class="tag">Trade Policy</span></div>
+          <div class="actions">
+            <a class="btn btn-soft" href="https://www.thejakartapost.com/opinion/2025/05/02/indonesia-should-respond-to-trumps-tariffs-with-import-deregulation.html" target="_blank" rel="noopener noreferrer">Paper</a>
+            <a class="btn btn-primary" href="reproducible-code/indonesia-respond-trump-tariffs/">Code</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Restoring free meals program as a child nutrition initiative.</h3>
+          <p class="meta">2025 | The Jakarta Post</p>
+          <div class="tag-row"><span class="tag">Policy Commentary</span><span class="tag">Human Capital</span></div>
+          <div class="actions">
+            <a class="btn btn-soft" href="https://www.thejakartapost.com/opinion/2025/04/07/restoring-free-meals-program-as-a-child-nutrition-initiative.html" target="_blank" rel="noopener noreferrer">Paper</a>
+            <a class="btn btn-primary" href="reproducible-code/restoring-free-meals-child-nutrition/">Code</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Why Prabowo's misguided austerity is emblematic of his free-wheeling economic policy.</h3>
+          <p class="meta">2025 | Indonesia at Melbourne</p>
+          <div class="tag-row"><span class="tag">Policy Commentary</span><span class="tag">Fiscal Policy</span></div>
+          <div class="actions">
+            <a class="btn btn-soft" href="https://indonesiaatmelbourne.unimelb.edu.au/why-prabowos-misguided-austerity-is-emblematic-of-his-free-wheeling-economic-policy/" target="_blank" rel="noopener noreferrer">Paper</a>
+            <a class="btn btn-primary" href="reproducible-code/prabowos-misguided-austerity/">Code</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Prabowo's pursuit of 8 per cent growth won't be without problems.</h3>
+          <p class="meta">2024 | East Asia Forum</p>
+          <div class="tag-row"><span class="tag">Policy Commentary</span><span class="tag">Growth Strategy</span></div>
+          <div class="actions">
+            <a class="btn btn-soft" href="https://eastasiaforum.org/2024/10/22/prabowos-pursuit-of-8-per-cent-growth-wont-be-without-problems/" target="_blank" rel="noopener noreferrer">Paper</a>
+            <a class="btn btn-primary" href="reproducible-code/prabowos-pursuit-8-percent-growth/">Code</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Return of the technocrats: Can Prabowo's economic team prove the doubters wrong?</h3>
+          <p class="meta">2024 | Indonesia at Melbourne</p>
+          <div class="tag-row"><span class="tag">Policy Commentary</span><span class="tag">Governance</span></div>
+          <div class="actions">
+            <a class="btn btn-soft" href="https://indonesiaatmelbourne.unimelb.edu.au/return-of-the-technocrats-can-prabowos-economic-team-prove-the-doubters-wrong/" target="_blank" rel="noopener noreferrer">Paper</a>
+            <a class="btn btn-primary" href="reproducible-code/return-of-technocrats/">Code</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>How Prabowo's 8% growth target will shape Indonesia's fiscal policy.</h3>
+          <p class="meta">2024 | Indonesia at Melbourne</p>
+          <div class="tag-row"><span class="tag">Policy Commentary</span><span class="tag">Macrofiscal</span></div>
+          <div class="actions">
+            <a class="btn btn-soft" href="https://indonesiaatmelbourne.unimelb.edu.au/how-prabowos-8-growth-target-will-shape-indonesias-fiscal-policy/" target="_blank" rel="noopener noreferrer">Paper</a>
+            <a class="btn btn-primary" href="reproducible-code/how-prabowos-8-growth-target/">Code</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>An analysis of the impact of Economic and Political Freedom on Economic Growth in Eight ASEAN Countries (1997-2007).</h3>
+          <p class="meta">2010 | Jurnal Ekonomi Pembangunan Indonesia</p>
+          <div class="tag-row"><span class="tag">Journal Article</span><span class="tag">ASEAN Growth</span></div>
+          <div class="actions">
+            <a class="btn btn-soft" href="https://scholarhub.ui.ac.id/jepi/vol11/iss1/3/" target="_blank" rel="noopener noreferrer">Paper</a>
+            <a class="btn btn-primary" href="reproducible-code/economic-political-freedom-asean-growth/">Code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block fade-up fade-4" id="commentary">
+      <h2 class="section-title">Policy Commentary</h2>
+      <p class="section-subtitle">Recent writing in East Asia Forum, Indonesia at Melbourne, and The Jakarta Post.</p>
+
+      <div class="commentary-grid">
+        <article class="card">
+          <h3>Nickel nationalism holds back Indonesia's clean tech ambitions.</h3>
+          <p class="meta">East Asia Forum Quarterly | 2026</p>
+          <p>Political economy of critical minerals policy and clean-tech value chains.</p>
+          <div class="actions"><a class="btn btn-soft" href="https://press.anu.edu.au/publications/journals/east-asia-forum-quarterly/east-asia-forum-quarterly-volume-18-number-1-2026" target="_blank" rel="noopener noreferrer">Read</a></div>
+        </article>
+
+        <article class="card">
+          <h3>Recalibrating Southeast Asian trade policy in a world of economic fragmentation.</h3>
+          <p class="meta">East Asia Forum | 2025</p>
+          <p>How regional economies can adapt trade strategy under fragmentation risk.</p>
+          <div class="actions"><a class="btn btn-soft" href="https://eastasiaforum.org/2025/09/20/recalibrating-southeast-asian-trade-policy-in-a-world-of-economic-fragmentation/" target="_blank" rel="noopener noreferrer">Read</a></div>
+        </article>
+
+        <article class="card">
+          <h3>Indonesia should respond to Trump's tariffs with import deregulation.</h3>
+          <p class="meta">The Jakarta Post | 2025</p>
+          <p>A practical response framework for Indonesia under renewed tariff shocks.</p>
+          <div class="actions"><a class="btn btn-soft" href="https://www.thejakartapost.com/opinion/2025/05/02/indonesia-should-respond-to-trumps-tariffs-with-import-deregulation.html" target="_blank" rel="noopener noreferrer">Read</a></div>
+        </article>
+
+        <article class="card">
+          <h3>How Prabowo's 8% growth target will shape Indonesia's fiscal policy.</h3>
+          <p class="meta">Indonesia at Melbourne | 2024</p>
+          <p>On growth ambition, fiscal constraints, and policy sequencing.</p>
+          <div class="actions"><a class="btn btn-soft" href="https://indonesiaatmelbourne.unimelb.edu.au/how-prabowos-8-growth-target-will-shape-indonesias-fiscal-policy/" target="_blank" rel="noopener noreferrer">Read</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block fade-up fade-5" id="media">
+      <h2 class="section-title">Media and Public Presence</h2>
+      <p class="section-subtitle">Selected media outlets and policy fora listed in CV_RL_2026.</p>
+
+      <div class="media-grid">
+        <article class="card">
+          <h3>News and policy outlets</h3>
+          <p>Published in <strong>East Asia Forum</strong>, <strong>East Asia Forum Quarterly</strong>, <strong>Indonesia at Melbourne</strong>, and <strong>The Jakarta Post</strong>.</p>
+          <div class="tag-row">
+            <span class="tag">Geoeconomics</span>
+            <span class="tag">Trade Policy</span>
+            <span class="tag">Industrial Policy</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Conferences and policy events</h3>
+          <p>Presented at ANU Indonesia Update, ATW, IRSA, ADEW, and DFAT Understanding Indonesia sessions.</p>
+          <div class="tag-row">
+            <span class="tag">ANU Indonesia Update</span>
+            <span class="tag">ATW</span>
+            <span class="tag">IRSA</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block fade-up" id="blog">
+      <h2 class="section-title">Blog and Explainers</h2>
+      <p class="section-subtitle">The US-Indonesia ART explainers are now under Blog, while this homepage stays focused on your academic profile.</p>
+
+      <div class="blog-grid">
+        <article class="card">
+          <h3>US-Indonesia ART Interactive Explainer</h3>
+          <p>Interactive explainer on legal structure, implementation logic, and compliance channels.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="blog/us-indonesia-art-explainer.html">Open Post</a>
+            <a class="btn btn-soft" href="blog/">All Blog Posts</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>US-Indonesia ART Detailed Explainer</h3>
+          <p>Long-form technical explainer with legal and policy detail.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="US_IDN_ART_baby_explainer_detailed.html">Open Detailed Version</a>
+            <a class="btn btn-soft" href="US_IDN_ART_interactive_explainer.pdf">PDF Snapshot</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Updated February 23, 2026 | Contact: <a href="mailto:r.l.edy@vu.nl">r.l.edy@vu.nl</a>
+  </footer>
 
   <script>
-    const ids = ['c1', 'c2', 'c3', 'c4'];
-    const box = document.getElementById('statusBox');
+    (function () {
+      const toggle = document.getElementById('navToggle');
+      const links = document.getElementById('navLinks');
+      if (!toggle || !links) return;
 
-    function updateStatus() {
-      const on = ids.map(id => document.getElementById(id).checked);
-      const score = on.filter(Boolean).length;
+      toggle.addEventListener('click', function () {
+        const isOpen = links.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
 
-      let html = '';
-
-      if (score === 4) {
-        html += '<strong>Likely tariff lane: Stable favorable access.</strong><br>';
-        html += 'Schedule 2A/2B benefits likely stay intact, other lines remain in the <=19% reciprocal lane, and textile zero-rate mechanism is most likely to be usable.';
-      } else if (score >= 2) {
-        html += '<strong>Likely tariff lane: Mixed durability.</strong><br>';
-        html += 'Base schedule benefits may continue, but risk of consultations, review, or restrictive actions rises if gaps persist.';
-      } else {
-        html += '<span class="risk">Likely tariff lane: High risk of preference erosion.</span><br>';
-        html += 'Weak implementation/alignment materially raises risk of US legal/policy action under enforcement terms and possible return to harsher reciprocal tariff treatment.';
-      }
-
-      if (!on[3]) {
-        html += '<br><br><b>Textiles note:</b> Without the operational linkage mechanism, zero-rate textile upside is limited.';
-      }
-
-      box.innerHTML = html;
-    }
-
-    ids.forEach(id => document.getElementById(id).addEventListener('change', updateStatus));
-    updateStatus();
+      links.querySelectorAll('a').forEach(function (anchor) {
+        anchor.addEventListener('click', function () {
+          links.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
   </script>
 </body>
 </html>
+

@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Blog posts and explainers by Riandy Laksono." />
+  <title>Blog | Riandy Laksono</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-nav">
+    <div class="nav-inner">
+      <a class="brand" href="../index.html#top"><span class="brand-mark">RL</span><span>Riandy Laksono</span></a>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+      <nav id="navLinks" class="nav-links" aria-label="Main">
+        <a href="../index.html#top">Home</a>
+        <a href="../index.html#publications">Publications</a>
+        <a href="../index.html#commentary">Commentary</a>
+        <a href="../index.html#media">Media</a>
+        <a href="../reproducible-code/">Code</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-block fade-up" style="margin-top: 1rem;">
+      <h1 class="section-title">Blog</h1>
+      <p class="section-subtitle">Policy explainers, research notes, and public-economics writing.</p>
+      <div class="highlight-band">
+        <p><strong>Featured theme:</strong> US-Indonesia ART explainers are now nested under this blog section, while the root homepage focuses on your academic profile.</p>
+      </div>
+    </section>
+
+    <section class="section-block fade-up fade-2">
+      <h2 class="section-title">Featured Posts</h2>
+      <div class="blog-grid">
+        <article class="card">
+          <h3>US-Indonesia ART Interactive Explainer</h3>
+          <p class="meta">Updated 2026</p>
+          <p>Interactive map of the agreement's architecture, implementation paths, and compliance trigger points.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="us-indonesia-art-explainer.html">Open Interactive Explainer</a>
+            <a class="btn btn-soft" href="../US_IDN_ART_interactive_explainer.pdf">PDF</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>US-Indonesia ART Detailed Explainer</h3>
+          <p class="meta">Long-form companion post</p>
+          <p>Expanded legal, institutional, and policy detail for readers who need the full context.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="../US_IDN_ART_baby_explainer_detailed.html">Open Detailed Explainer</a>
+            <a class="btn btn-soft" href="../US_IDN_ART_baby_explainer_detailed.pdf">PDF</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block fade-up fade-3">
+      <h2 class="section-title">Downloads</h2>
+      <div class="code-grid">
+        <article class="card">
+          <h3>US-Indonesia ART full agreement (PDF)</h3>
+          <p class="meta">Primary source document</p>
+          <div class="actions"><a class="btn btn-soft" href="../US_IDN_ART_full_agreement_2026.pdf">Download</a></div>
+        </article>
+
+        <article class="card">
+          <h3>US-Indonesia ART schedules (PDF/XLSX)</h3>
+          <p class="meta">Annex schedules</p>
+          <div class="actions">
+            <a class="btn btn-soft" href="../US_IDN_ART_schedules_2026.pdf">PDF</a>
+            <a class="btn btn-soft" href="../US_IDN_ART_schedules_2026.xlsx">XLSX</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">Blog section | <a href="../index.html">Back to homepage</a></footer>
+
+  <script>
+    (function () {
+      const toggle = document.getElementById('navToggle');
+      const links = document.getElementById('navLinks');
+      if (!toggle || !links) return;
+
+      toggle.addEventListener('click', function () {
+        const isOpen = links.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+
+      links.querySelectorAll('a').forEach(function (anchor) {
+        anchor.addEventListener('click', function () {
+          links.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
